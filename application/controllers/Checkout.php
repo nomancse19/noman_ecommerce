@@ -280,12 +280,12 @@ class Checkout extends CI_Controller {
           
           
             try{     
-                $soapClient = new SoapClient("https://api2.onnorokomSMS.com/sendSMS.asmx?wsdl");     
+                $soapClient = new SoapClient("");     
                 $paramArray = array(      
-                        'userName'        => "01772068908",         
-                        'userPassword'    => "131905213609",        
+                        'userName'        => "",         
+                        'userPassword'    => "",        
                         'messageText'   => $sms_msg,        
-                        'numberList'    => "01521451354,01571757161",        
+                        'numberList'    => "01521451354",        
                         'smsType'       => "TEXT",        
                         'maskName'      => '',         
                         'campaignName'  => '',); 
